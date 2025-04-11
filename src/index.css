@@ -1,0 +1,532 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+@import "tailwindcss";
+
+:root {
+  --purple: #7235d3;
+  --black: #424242;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", serif;
+  font-weight: 600;
+}
+
+h1{
+  font-size: calc(2.5vw + 1rem);
+  margin-bottom: 1%;
+}
+
+h2{
+  font-size: calc(1.5vw + 1rem);
+}
+
+h3{
+  font-size: calc(0.8vw + 0.8rem);
+}
+
+
+
+body {
+  display: grid;
+  max-width: 100%;
+  color: var(--black);
+  /* overflow-x: hidden; */
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  background-color: var(--white);
+  border-radius: 0px 0px 12px 12px;
+  z-index: 50;
+  top: 0;
+}
+
+.logo {
+  width: 13%;
+  height: 13%;
+  cursor: pointer;
+}
+
+.logo-div a{
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  gap: 10px;
+}
+
+.logo-div h1 {
+  margin-top: 2%;
+  font-family: "Emilys Candy", serif;
+  color: var(--purple);
+}
+
+.menu-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+}
+
+nav ul {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  place-items: center;
+  list-style: none;
+  font-size: 22px;
+}
+
+nav ul li:hover {
+  border-radius: 8px;
+  cursor: pointer;
+  text-shadow: 2px 2px 24px var(--purple);
+}
+
+nav button {
+  margin: 15px 20px 15px 0px;
+  padding: 14px;
+  border: none;
+  border-radius: 5%;
+  background-color: var(--white);
+  color: var(--black);
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+nav button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  transition-duration: 300ms;
+}
+
+/*  */
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  width: 100%;
+}
+
+.hero-container img {
+  margin-right: 4%;
+  width: 60%;
+  height: 40%;
+  margin: 10% 3% 10% 5%;
+  border-radius: 4px;
+}
+
+.hero-text {
+  display: grid;
+  place-items: flex-start;
+  width: 30%;
+  font-size: 20px;
+}
+
+.hero-text h1 {
+  color: var(--purple);
+  font-family: "Emilys Candy", serif;
+  margin-bottom: 5%;
+}
+
+.hero-text button {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin-top: 5%;
+  padding: 5% 10%;
+  color: var(--black);
+  border: 1px solid var(--white);
+  background-color: var(--white);
+  font-size: 20px;
+}
+
+.hero-text button img {
+  margin: 0;
+  margin-left: 3%;
+  height: 80%;
+  width: 55%;
+}
+
+.hero-text button:hover {
+  cursor: pointer;
+  border: 1px solid var(--purple);
+  border-radius: 4px;
+  gap: 4px;
+  transition: gap 500ms ease-out;
+}
+
+/*  */
+
+.bs-div {
+  display: grid;
+  text-align: center;
+  margin: 10% 7% 10% 7%;
+}
+
+.card-div {
+  display: flex;
+  justify-content: center;
+  gap: 3%;
+  padding-top: 3%;
+  border-top: 1px solid var(--black);
+}
+
+/*  */
+
+.card {
+  display: grid;
+  justify-content: center;
+  -webkit-box-shadow: 0px 0px 10px 5px rgba(209,209,209,1);
+  box-shadow: 0px 0px 10px 5px rgba(209,209,209,1);
+  border-radius: 10px;
+}
+
+/* .card:hover{
+  margin-bottom: 10px;
+  transition: margin-bottom 0.3s ease-out;
+} */
+
+.card img {
+  width: 100%;
+border-radius: 10px 10px 0px 0px;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  padding: 0 min(10px, 3vw) 0 min(10px, 3vw);
+  margin-bottom: min(3%, 6px);
+}
+
+.description a {
+  font-size: 1.5vw;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.btn {
+  /* width: 50%; */
+  display: flex;
+  justify-content: end;
+  gap: 3%;
+}
+
+.btn button {
+  width: 22px;
+  cursor: pointer;
+  padding: 3%;
+  background-color: var(--white);
+  border: none;
+}
+
+/*  */
+
+.ad-div {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+  margin: 10% 7% 10% 7%;
+}
+
+.ad-div img {
+  width: 55%;
+  margin-right: 5%;
+  border-radius: 1%;
+}
+
+.ad-text {
+  display: grid;
+  justify-content: center;
+  place-items: flex-start;
+  font-size: 20px;
+}
+
+.ad-text h2 {
+  color: var(--black);
+  margin-bottom: 3%;
+}
+
+.ad-text button {
+  margin-top: 5%;
+  padding: 3% 10%;
+  font-size: 20px;
+  align-items: flex-start;
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+}
+
+.ad-text button:hover {
+  background-color: var(--purple);
+  color: var(--white);
+  border-radius: 5%;
+  transition-duration: 500ms;
+}
+
+/*  */
+
+.container {
+  margin: 10% 7% 10% 7%;
+  text-align: center;
+}
+
+.combine {
+  display: flex;
+  padding-top: 3%;
+  gap: 3%;
+  border-top: 1px solid var(--black);
+}
+
+.category-card img {
+  width: 100%;
+}
+
+/*  */
+
+.std-div {
+  text-align: center;
+  margin: 10% 7%;
+}
+
+.std-imgs {
+  display: flex;
+  justify-content: center;
+  padding-top: 3%;
+  /* border-top: 1px solid var(--black); */
+}
+
+.std-div img {
+  width: 30%;
+}
+
+.std-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.std-text h3 {
+  margin-top: 3%;
+}
+
+/* About Us */
+
+.about-container{
+  height: 100vh;
+}
+
+.about-main{
+  margin: 10% 5% 5%;
+}
+
+.about-main h1{
+  color: var(--purple);
+  font-weight: 700;
+}
+
+.about-ceo1, .about-ceo2{
+  margin-bottom: 3%;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  font-size: 18px;
+  border-radius: 15px;
+  background-color: #ede0ff;
+}
+
+.about-ceo1{
+  padding-right: 2%;
+}
+
+.about-ceo2{
+  padding-left: 2%;
+}
+
+.about-ceo1 h3, .about-ceo2 h3{
+  color: var(--purple);
+}
+
+.about-ceo1 img{
+  width: 18vw;
+  border-radius: 15px 0px 0px 15px;
+  margin-right: 3%;
+}
+
+.about-ceo2 img{
+  width: 18vw;
+  border-radius: 0px 15px 15px 0px;
+  margin-left: 3%;
+}
+
+.about-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  font-size: calc(0.2vw + 1rem);
+  /* margin: 3%; */
+}
+
+.about-content img{
+  margin-right: 3%;
+  width: 25vw;
+  border-radius: 10px;
+}
+
+.feature-span{
+  display: flex;
+  justify-content: space-evenly;
+  font-size: calc(0.2vw + 1rem);
+  margin-top: 2%;
+}
+
+.feature-span span{
+  padding: 1% 3%;
+  border-radius: 50px;
+  background-color: rgb(208, 255, 189);
+  color: darkgreen;
+}
+
+/* Contact Us */
+.contact-container{
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  margin-top: 10%;
+}
+
+.contact-container h1{
+  color: #7235d3;
+  margin-bottom: 2%;
+  font-weight: 800;
+}
+
+.contact-form{
+  width: 50%;
+  margin: 0% 5% 2%;
+  padding: 5%;
+  background-color: #ede0ff;
+  display: flex;
+  flex-direction: column;
+}
+
+form label{
+  font-size: calc(0.3vw + 1rem);
+  margin: 2% 0%;
+}
+
+form input, textarea{
+  border: 1px solid #424242;
+  border-radius: 10px;
+  padding: 1% 2%;
+  background-color: #f9f9f9;
+}
+
+form button{
+  background-color: #7235d3;
+  color: #ddd;
+  border: none;
+  border-radius: 5px;
+  font-size: calc(0.2vw + 1rem);
+  width: 200px;
+  margin-top: 2%;
+  padding: 2% 4%;
+}
+
+/* Footer */
+
+.footer-main {
+  display: flex;
+  padding: 7% 5%;
+  /* padding-top: 5%; */
+  background-color: var(--purple);
+  border-top: 1px solid var(--black);
+  color: var(--white);
+}
+
+.footer-main ul {
+  list-style: none;
+  font-size: 20px;
+}
+
+.left {
+  display: grid;
+  place-items: center;
+  width: 40%;
+}
+
+.left img {
+  width: 30%;
+  cursor: pointer;
+}
+
+.left h1 {
+  color: var(--white);
+  font-family: "Emilys Candy", serif;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.middle {
+  display: grid;
+  height: 95%;
+  width: 30%;
+}
+
+.middle ul {
+  line-height: 1.5em;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  gap: 7%;
+  margin-top: 3%;
+}
+
+.social img {
+  width: 10%;
+  cursor: pointer;
+}
+
+.social img:hover{
+  width: 12%;
+}
+
+.right {
+  width: 30%;
+}
+
+.right ul {
+  line-height: 1.7em;
+}
+
+.right li:hover, .middle li:hover{
+  text-decoration: underline;
+  cursor: pointer;
+  margin-left: 6px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.right h2,
+.middle h2 {
+  font-size: 22px;
+  font-weight: 800;
+  margin-bottom: 3%;
+}
