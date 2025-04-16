@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 function Navigation() {
   return (
-    <nav nav >
+    <nav>
       <div className="logo-div">
         <Link to="/">
           <img src="./images/skincare-logo.png" alt="logo" className="logo" />
@@ -12,13 +12,14 @@ function Navigation() {
       <div className="menu-div">
         <ul>
           <li>Products</li>
-          <li>Category</li>
           <li>
             <Link to="/about">About Us</Link>
           </li>
           <li><Link to="/contact">Contact Us</Link></li>
         </ul>
-        <button>Login/Register</button>
+        <Link to="/login">
+          <button>Login/Register</button>
+        </Link>
       </div>
     </nav>
   );

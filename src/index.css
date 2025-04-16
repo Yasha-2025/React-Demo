@@ -18,7 +18,7 @@
 }
 
 h1{
-  font-size: calc(2.5vw + 1rem);
+  font-size: calc(2vw + 1rem);
   margin-bottom: 1%;
 }
 
@@ -87,9 +87,10 @@ nav ul {
 }
 
 nav ul li:hover {
-  border-radius: 8px;
   cursor: pointer;
-  text-shadow: 2px 2px 24px var(--purple);
+  text-decoration: underline;
+  color: var(--purple);
+  transition: all 0.3s ease-in-out;
 }
 
 nav button {
@@ -108,6 +109,74 @@ nav button:hover {
   background-color: var(--purple);
   color: var(--white);
   transition-duration: 300ms;
+}
+
+/* Login-Reg-Navbar */
+
+.login-reg-page{
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #7235d320;
+}
+
+.navbar-logo{
+  margin-left: 3vw;
+}
+
+.navbar-logo a{
+  display: flex;
+  flex-direction: row;
+  place-items: center;
+  gap: 6px;
+  margin: 2% 0% 2% 3%;
+}
+
+.navbar-logo h1{
+  font-family: "Emilys Candy", serif;
+  color: var(--purple);
+}
+
+.navbar-logo img{
+  width: 11%;
+}
+
+
+.login-reg{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding: min(5%, 3vw);
+  border-radius: 12px;
+  background-color: #fafafa;
+  margin: 10% 2%;
+}
+
+.login-reg h1{
+  text-align: center;
+  color: var(--purple);
+}
+
+#login-reg-form{
+  display: flex;
+  flex-direction: column;
+}
+
+.terms-label{
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.terms-label input{
+  width: 15px;
+  height: 15px;
+}
+
+.forgot-link{
+  margin: 6px 0px;
 }
 
 /*  */
@@ -275,24 +344,6 @@ border-radius: 10px 10px 0px 0px;
   color: var(--white);
   border-radius: 5%;
   transition-duration: 500ms;
-}
-
-/*  */
-
-.container {
-  margin: 10% 7% 10% 7%;
-  text-align: center;
-}
-
-.combine {
-  display: flex;
-  padding-top: 3%;
-  gap: 3%;
-  border-top: 1px solid var(--black);
-}
-
-.category-card img {
-  width: 100%;
 }
 
 /*  */
@@ -502,10 +553,6 @@ form button{
 .social img {
   width: 10%;
   cursor: pointer;
-}
-
-.social img:hover{
-  width: 12%;
 }
 
 .right {

@@ -2,7 +2,6 @@ import Navigation from "../components/Navigation";
 import Hero from "../components/Hero";
 import Bestseller from "../components/Bestseller";
 import Ad from "../components/Ad";
-import ShopCategory from "../components/ShopCategory";
 import Standards from "../components/Standards";
 import Footer from "../components/Footer";
 
@@ -12,7 +11,6 @@ function Home() {
         <Hero />
         <Bestseller />
         <Ad />
-        <ShopCategory />
         <Standards />
         <Footer />
     </div>;
