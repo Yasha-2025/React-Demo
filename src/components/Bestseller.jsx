@@ -1,4 +1,6 @@
+// import Slider from "react-slick";
 import Card from "./Card.jsx";
+
 
 const itemList = [
     {
@@ -24,6 +26,7 @@ const itemList = [
 ];
 
 function Bestseller() {
+
     return (
         <div className="bs-div">
             <h1>Our Bestsellers</h1>

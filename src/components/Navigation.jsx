@@ -11,7 +11,9 @@ function Navigation() {
       </div>
       <div className="menu-div">
         <ul>
-          <li>Products</li>
+          <li>
+            <Link to="/products">Products</Link>
+          </li>
           <li>
             <Link to="/about">About Us</Link>
           </li>

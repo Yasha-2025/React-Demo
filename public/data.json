@@ -1,0 +1,45 @@
+[
+    {
+      "productId": "S1001",
+      "productName": "Moisturizer",
+      "image": "./images/products/moisturizer.jpg",
+      "price": 499
+    },
+    {
+      "productId": "S1002",
+      "productName": "Sunscreen",
+      "image": "/images/products/sunscreen.jpg",
+      "price": 799
+    },
+    {
+      "productId": "S1003",
+      "productName": "Facewash",
+      "image": "/images/products/facewash.jpg",
+      "price": 399
+    },
+    {
+      "productId": "S1004",
+      "productName": "Body Lotion",
+      "image": "/images/products/bodylotion.jpg",
+      "price": 399
+    },
+    {
+      "productId": "S1005",
+      "productName": "Serum",
+      "image": "/images/products/serum.jpg",
+      "price": 799
+    },
+    {
+      "productId": "S1006",
+      "productName": "Combo 1",
+      "image": "/images/products/combo1.jpg",
+      "price": 1329
+    },
+    {
+      "productId": "S1007",
+      "productName": "Combo 2",
+      "image": "/images/products/combo2.jpg",
+      "price": 849
+    }
+  ]
+  
