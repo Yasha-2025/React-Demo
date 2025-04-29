@@ -4,23 +4,23 @@ import Card from "./Card.jsx";
 
 const itemList = [
     {
-        pic: "././images/facewash.jpg",
+        pic: "././images/products/facewash.jpg",
         itemName: "Facewash",
     },
     {
-        pic: "././images/bodylotion.jpg",
+        pic: "././images/products/bodylotion.jpg",
         itemName: "Body-Lotion",
     },
     {
-        pic: "././images/moisturizer.jpg",
+        pic: "././images/products/moisturizer.jpg",
         itemName: "Moisturizer",
     },
     {
-        pic: "././images/serum.jpg",
+        pic: "././images/products/serum.jpg",
         itemName: "Serum",
     },
     {
-        pic: "././images/sunscreen.jpg",
+        pic: "././images/products/sunscreen.jpg",
         itemName: "Sunscreen",
     },
 ];
